@@ -1,0 +1,43 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html>
+
+  <head>
+    <meta name="keywords" content="Grue"/>
+    <title>Grue</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+    <link rel="stylesheet" type="text/css" href="stylesheets/otp_doc.css"/>
+  </head>
+
+  <body>
+
+    <div class="logo">
+      <img src="images/grue.png" alt="GRUE"/>
+    </div>
+
+    <div id="text">
+      <p></p>
+      <p>I'd like to organize an Erlang User Group here in Rome.</p>
+      <p>If you're interested just leave your email in the box below;
+      if enough people shows up I'll create a mailing list...</p>
+      <div id="entry">
+        <form method="post" action="/subscribe.yaws">
+          <p>!enter your email:</p>
+          <input name="email" type="text" size="48" />
+          <div id="recaptcha">
+          <p>?are you human:</p>
+            <erl>
+            out(Arg) ->
+            {ehtml,
+            {p, [], [erl_recaptcha:display_html("6Lc-0wsAAAAAAPW_SKVa5nBN73Gvob0G2ELh5f5l", true, "Cannot connect to recaptcha.~n")]}}.
+            </erl>
+          </div>
+          <p><input type="submit" value="!submit!" /></p>
+        </form>
+      </div>
+
+    </body>
+
+  </html>
