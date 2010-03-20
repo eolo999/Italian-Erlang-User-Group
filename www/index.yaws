@@ -37,6 +37,9 @@ PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
           <p><input type="submit" value="!submit!" /></p>
         </form>
       </div>
+      <div id="collecta">
+	<iframe style="border:none;width:100%; height:400px;overflow:hidden;" src="http://widget.collecta.com/widget.html?query=erlangit&alias=What's%20happening&delay=2&fullimage=undefined" id="widgetframe" frameborder="0" scrolling="no"></iframe>
+      </div>
 
     </body>
 
