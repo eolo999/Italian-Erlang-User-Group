@@ -1,7 +1,12 @@
 ebin/*beam
-logs/*log
-logs/*access
-logs/*error
+log/*log
+log/*access
+log/*error
+log/*log.1
+log/*log.2
+
+*~
+*.dump
 
 bin/connect
 bin/heart
@@ -30,3 +35,5 @@ lib/syntax_tools-*
 lib/wpart-*
 lib/wparts-*
 lib/xmerl-*
+
+lib/core-*/ebin/*.beam

@@ -1,0 +1,14 @@
+#language {
+    float: right;
+}
+
+#menu {
+    clear: both;
+    padding: 10px 0;
+}
+
+#menu ul li {
+    float: left;
+    list-style: none;
+    padding: 0 5px;
+}
