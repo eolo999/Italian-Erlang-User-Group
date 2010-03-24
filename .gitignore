@@ -8,6 +8,9 @@ log/*log.2
 *~
 *.dump
 
+config/inets.conf
+config/inets_https.conf
+
 bin/connect
 bin/heart
 bin/to_erl
