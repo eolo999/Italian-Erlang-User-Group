@@ -2,7 +2,7 @@
 
 -export([display/1]).
 
--define(SECTIONS, ["what", "learn", "news", "jobs", "team", "links"]).
+-define(SECTIONS, ["what", "learn", "news", "jobs", "team", "blog", "links"]).
 
 display(Args) ->
     SectionId = proplists:get_value(id, Args),

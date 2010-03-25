@@ -1,4 +1,4 @@
-ebin/*beam
+*beam
 log/*log
 log/*access
 log/*error

@@ -1,0 +1,16 @@
+<html>
+<head>
+  <title>Erlang Web Shop - All Items</title>
+</head>
+<body>
+  <h1>All blog posts:</h1>
+
+  <ul>
+    <wpart:list select="map" list="posts" as="post">
+      <li>
+      <a wpart:href="/section/blog/show/{[integer]post:id}"><wpart:lookup key="post:title" /></a> by <wpart:lookup key="post:author" />
+      </li>
+    </wpart:list>
+  </ul>
+</body>
+</html>

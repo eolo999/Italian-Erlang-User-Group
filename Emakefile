@@ -59,3 +59,7 @@
 {'lib/core-0.1/src/*',[{outdir,"lib/core-0.1/ebin"},
                        {i,"lib/core-0.1/include"},
                        debug_info,strict_record_tests,netload]}.
+
+{'lib/blog-0.1/src/*',[{outdir,"lib/blog-0.1/ebin"},
+                         {i,"lib/blog-0.1/include"},
+                         debug_info,strict_record_tests,netload]}.
