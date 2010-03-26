@@ -63,3 +63,13 @@
 {'lib/blog-0.1/src/*',[{outdir,"lib/blog-0.1/ebin"},
                          {i,"lib/blog-0.1/include"},
                          debug_info,strict_record_tests,netload]}.
+{"lib/e_auth-1.0/src/*",
+ [{outdir,"lib/e_auth-1.0/ebin"},
+  {i,"lib/e_auth-1.0/include"},
+  debug_info,strict_record_tests]}.
+
+{"lib/e_auth_dets-1.0/src/e_auth_dets.erl",
+ [{outdir,"lib/e_auth_dets-1.0/ebin"},
+  {i,"lib/e_auth_dets-1.0/include"},
+  debug_info,strict_record_tests]}.
+
