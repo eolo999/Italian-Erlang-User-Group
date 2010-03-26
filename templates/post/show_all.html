@@ -6,11 +6,17 @@
   <h1>All blog posts:</h1>
 
   <ul>
-    <wpart:list select="map" list="posts" as="post">
-      <li>
-      <a wpart:href="/blog/show/{[integer]post:id}"><wpart:lookup key="post:title" /></a> by <wpart:lookup key="post:author" />
-      </li>
+    <wpart:paginate action="page" as="posts_page" list="posts" per_page="5">
+    <wpart:list select="map" list="posts_page" as="post">
+    <li>
+    <a wpart:href="/blog/show/{[integer]post:id}"><wpart:lookup key="post:title" /></a> by <wpart:lookup key="post:author" />
+    <p><wpart:lookup key="post:body" /></p>
+    </li>
     </wpart:list>
+    </wpart:paginate>
   </ul>
+  <wpart:paginate action="prev_link" text="Previous items" /> ||
+  <wpart:paginate action="next_link" text="Next items" />
+
 </body>
 </html>
