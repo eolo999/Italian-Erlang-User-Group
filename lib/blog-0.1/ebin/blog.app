@@ -1,5 +1,5 @@
-{application,'blog\t',
-             [{description,"blog\t description"},
+{application,'blog',
+             [{description,"blog description"},
               {vsn,"0.1"},
               {modules,[]},
               {registered,[]},
