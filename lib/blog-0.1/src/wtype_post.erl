@@ -38,7 +38,7 @@ format(Post) ->
     {"id", Post#post.id},
     {"title", Post#post.title},
     {"author", Post#post.author},
-    {"date", Post#post.date},
-    {"body", Post#post.body}
+    {"date", Post#post.date}, 
+    {"body", re:replace(Post#post.body,"\n","</br>")}
   ].
 

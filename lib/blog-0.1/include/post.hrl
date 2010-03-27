@@ -25,9 +25,11 @@
     body = {text, [
         {description, "Body"},
         {max_length, 50000},
-        {rows,10},
-        {cols,70},
-        {html, ["u", "b", "i", "a", "h1", "h2", "h3",
+        {html_attrs,[{rows,10},
+                     {cols,70}
+                    ]
+        },
+        {html_whitelist, ["u", "b", "i", "a", "h1", "h2", "h3",
        "ul", "ol", "li", "br", "hr", "img",
        "center"]}
   ]}}).
