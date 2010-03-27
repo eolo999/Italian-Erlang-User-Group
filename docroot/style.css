@@ -1,14 +1,104 @@
+body {
+    margin: 0;
+    font-family: Verdana,Arial,Helvetica;
+    background-color: #353535;
+    color: #aaaaaa;
+}
+
+#page {
+    width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#top {
+    float: left;
+    text-align: center;
+}
+
 #language {
     float: right;
 }
 
+#language ul li {
+    float: left;
+    list-style: none;
+    padding: 0 5px;
+}
+
+
+#language a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+#language a:hover {
+    color: #ffffff;
+}
+
+#logo {
+    float: left;
+    font-size: 2em;
+}
+
+#logo a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+#logo a:hover {
+    color: #ffffff;
+}
+
 #menu {
-    clear: both;
-    padding: 10px 0;
+    text-color: #aaaaaa;
+    float: right;
+    font-size: 0.9em;
 }
 
 #menu ul li {
     float: left;
     list-style: none;
-    padding: 0 5px;
+    padding: 0 10px;
+}
+
+#menu .active {
+   background-color: #ffffff;
+}
+
+#menu a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #ffffff;
+}
+
+#menu .active a {
+    color: #555555;
+    text-decoration: none;
+}
+
+#main {
+    clear: both;
+    background-color: #ffffff;
+    color: #555555;
+}
+
+#content {
+}
+
+#footer {
+    font-size: 0.8em;
+    padding-top: 3px;
+}
+
+#footer a {
+    color: #aaaaaa;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #ffffff;   
 }

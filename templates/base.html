@@ -9,43 +9,48 @@
     <meta name="google-site-verification" content="2QnEeAByqwfiKFqXu82Grj7gLAmfVXCCHW8YtAcm_0I" />
   </head>
   <body>
-    <div id="language">
-      <ul>
-        <li><a href="/session/language/it">Italiano</a></li>
-        <li><a href="/session/language/en">English</a></li>
-      </ul>
-
-    </div>
-    <div id="menu">
-      <ul>
-        <li>
-          <a href="/">Home</a>
-        </li>
-        <li>
-          <a href="/section/what"><wpart:lang key="section:title:what" /></a>
-        </li>
-        <li>
-          <a href="/section/learn"><wpart:lang key="section:title:learn" /></a>
-        </li>
-        <li>
-          <a href="/section/news"><wpart:lang key="section:title:news" /></a>
-        </li>
-        <li>
-          <a href="/section/jobs"><wpart:lang key="section:title:jobs" /></a>
-        </li>
-        <li>
-          <a href="/section/team"><wpart:lang wpart:key="section:title:team" /></a>
-        </li>
-        <li>
-          <a href="/section/links"><wpart:lang wpart:key="section:title:links" /></a>
-        </li>
-      </ul>
-    </div>
-    <div id="content">
-      <wtpl:include name="content" />
-    </div>
-    <div id="footer">
-      Powered by <a href="http://www.erlang-web.org" target="_blank">Erlang Web</a>.
+    <div id="page">
+      <div id="top">
+	<div id="language">
+	  <ul>
+            <li><a href="/session/language/it">Italiano</a></li>
+            <li><a href="/session/language/en">English</a></li>
+	  </ul>
+	</div>
+	<div id="logo">
+	  <a href="/">Italian EUG</a>
+	</div>
+	<div id="menu">
+	  <ul>
+            <li wpart:class="{[string]active_what}">
+              <a href="/section/what"><wpart:lang key="section:title:what" /></a>
+            </li>
+            <li wpart:class="{[string]active_learn}">
+              <a href="/section/learn"><wpart:lang key="section:title:learn" /></a>
+            </li>
+            <li wpart:class="{[string]active_news}">
+              <a href="/section/news"><wpart:lang key="section:title:news" /></a>
+            </li>
+            <li wpart:class="{[string]active_jobs}">
+              <a href="/section/jobs"><wpart:lang key="section:title:jobs" /></a>
+            </li>
+            <li wpart:class="{[string]active_team}">
+              <a href="/section/team"><wpart:lang wpart:key="section:title:team" /></a>
+            </li>
+            <li wpart:class="{[string]active_links}">
+              <a href="/section/links"><wpart:lang wpart:key="section:title:links" /></a>
+            </li>
+	  </ul>
+	</div>
+      </div>
+      <div id="main">
+	<div id="content">
+	  <wtpl:include name="content" />
+	</div>
+      </div>
+      <div id="footer">
+	Powered by <a href="http://www.erlang-web.org" target="_blank">Erlang Web</a> | Copyright 2010 - Italian Erlang User Group.
+      </div>
     </div>
     <script type="text/javascript">
       var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
