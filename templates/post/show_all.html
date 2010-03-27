@@ -1,10 +1,7 @@
-<html>
-<head>
-  <title>Erlang Italia Blog - All Postss</title>
-</head>
-<body>
-  <h1>All blog posts:</h1>
+<wtpl:parent path="base.html">
+  <wtpl:content name="content">
 
+  <h1>Blog posts:</h1>
   <ul>
     <wpart:paginate action="page" as="posts_page" list="posts" per_page="5">
     <wpart:list select="map" list="posts_page" as="post">
@@ -18,5 +15,5 @@
   <wpart:paginate action="prev_link" text="Previous items" /> ||
   <wpart:paginate action="next_link" text="Next items" />
 
-</body>
-</html>
+  </wtpl:content>
+</wtpl:parent><html>
