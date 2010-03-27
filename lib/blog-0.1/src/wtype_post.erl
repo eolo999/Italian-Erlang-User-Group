@@ -9,6 +9,7 @@ get_record_info(post) -> record_info(fields, post);
 get_record_info(post_types) -> #post_types{}.
 
 create(Post) ->
+    %Post1 = Post#post{date=erlang:localtime()},
     e_db:write(post, Post).
 
 read(all) ->
@@ -37,6 +38,7 @@ format(Post) ->
     {"id", Post#post.id},
     {"title", Post#post.title},
     {"author", Post#post.author},
+    {"date", Post#post.date},
     {"body", Post#post.body}
   ].
 

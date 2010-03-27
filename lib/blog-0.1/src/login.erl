@@ -7,7 +7,7 @@ login(_Args) ->
 
   case e_auth:login(Username, Password) of
     ok ->
-      {template, "login/successful.html"};
+      {redirect, "/"};
     {error, Reason} ->
       wpart:fset("error", Reason),
       {template, "login/unsuccessful.html"}

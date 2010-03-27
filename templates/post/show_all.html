@@ -1,19 +1,32 @@
 <wtpl:parent path="base.html">
   <wtpl:content name="content">
+  <h1>All blog posts:</h1>
 
-  <h1>Blog posts:</h1>
   <ul>
     <wpart:paginate action="page" as="posts_page" list="posts" per_page="5">
+    <wpart:list select="sort" list="posts_page" as="post" pred="fun(I1,I2) -> I1 == I2 end.">
     <wpart:list select="map" list="posts_page" as="post">
     <li>
-    <a wpart:href="/blog/show/{[integer]post:id}"><wpart:lookup key="post:title" /></a> by <wpart:lookup key="post:author" />
-    <p><wpart:lookup key="post:body" /></p>
+    <wpart:lookup key="post:date" format="date(YYYY-MM-DD)"  /><br/>
+    <a wpart:href="/blog/show/{[integer]post:id}">
+    <wpart:lookup key="post:title" /></a> by 
+    <wpart:lookup key="post:author" />
+    <p><wpart:lookup key="post:body" format="html" />
+      <wpart:choose>
+        <wpart:when test="e_auth:status()">
+          <br/><small><a wpart:href="/blog/admin/delete/{[integer]post:id}">delete...</a></small>
+        </wpart:when>
+      </wpart:choose>
+      <br/><br/></p>
     </li>
+    </wpart:list>
     </wpart:list>
     </wpart:paginate>
   </ul>
   <wpart:paginate action="prev_link" text="Previous items" /> ||
   <wpart:paginate action="next_link" text="Next items" />
-
-  </wtpl:content>
+<p>
+<a href="/blog/admin/add">add a post</a>
+</p>
+</wtpl:content>
 </wtpl:parent><html>
