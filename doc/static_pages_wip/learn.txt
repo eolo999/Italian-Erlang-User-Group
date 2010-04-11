@@ -1,0 +1,31 @@
+La curva di apprendimento di Erlang, puo' variare in base alla preparazione personale, e di conseguenza, 
+in questa pagina e' giusto proporre due percorsi di apprendimento distinti.
+	
+Nel primo percorso si suppone che chi stia leggendo non abbia alcun fondamento riguardo alla programmazione funzionale, 
+e di conseguneza, dato che Erlang e' un linguaggio di programmazione che soddisfa il paradigma funzionale in modo non puro, 
+sara' utile farsi un idea ed entrare in contatto con questo modo di pensare.
+E' importante che questa parte di percorso venga presa in considerazione soprattutto da coloro che provengono da linguaggi 
+che seguono il paradigma della programmazione imperativa, perche' dovranno capire le differenze con le loro abbitudini di 
+programmazione, prima di poter pensare alla sintassi del linguaggio Erlang.
+	
+	
+Nel secondo percorso invece si forniranno informazioni quali link utlili e libri per riscire a fare una vera e propria "full immersion" 
+che vi portera' a conoscere il linguaggio, i suoi punti di forza e gli ambiti nei quali trova maggior applicazione.
+	
+Uno sguardo alla Programmazione Funzionale
+	
+Imparare Elrang
+Di seguito potete trovare una serie di link che propongono risorse fruibili liberamente on-line:
+	-"Erlang for Skeptics" di Luke Venediger
+	-"Getting started quickly" direttamente dal sito ufficiale di Erlang
+	-"Getting started slowly" direttamente dal sito ufficiale di Erlang
+	-"Getting started very very very slowly" direttamente dal sito ufficiale di Erlang
+	-"Articoli e Documentazione" direttamente dal sito ufficiale di Erlang
+		
+Di seguito trovate un elenco dei libri consigliati per ottenere una buona conoscenza e padronanza del linguaggio:
+	-"ERLANG Programming" di Francesco Cesarini e Simon Thompson
+	-"Programming Erlang: Software for a Concurrent World" di Joe Armstrong
+	-"Erlang and OTP in Action" di Martin Logan, Eric Merritt, e Richard Carlsson (<a href="http://www.amazon.com/Erlang-OTP-Action-Martin-Logan/dp/1933988789">Amazon</a>)
+	-"Erlang Web Applications: Problem - Design - Solutions" di Nick Gerakines
+	-"Mastering Erlang: Writing Real World Applications" di Geoff Cant
+	
